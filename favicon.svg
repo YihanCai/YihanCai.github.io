@@ -1,0 +1,11 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="YihanCai">
+  <defs><radialGradient id="bg" cx="30%" cy="14%" r="120%">
+    <stop offset="0%" stop-color="#1b2550"/><stop offset="55%" stop-color="#0a0f26"/><stop offset="100%" stop-color="#04060f"/>
+  </radialGradient></defs>
+  <rect width="100" height="100" rx="20" fill="url(#bg)"/>
+  <g stroke="#8fb4ff" stroke-width="1" fill="#dfe8ff">
+    <line x1="38" y1="44" x2="52" y2="36"/><line x1="52" y1="36" x2="64" y2="48"/><line x1="64" y1="48" x2="56" y2="60"/>
+    <circle cx="38" cy="44" r="2.4" fill="#fff"/><circle cx="52" cy="36" r="1.8"/><circle cx="64" cy="48" r="1.8"/><circle cx="56" cy="60" r="1.8"/>
+  </g>
+  <circle cx="30" cy="68" r="1.2" fill="#fff"/><circle cx="72" cy="30" r="1.2" fill="#fff"/><circle cx="68" cy="70" r="1" fill="#b79bff"/>
+</svg>

@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>蔡依翰 · YihanCai — 自动化·嵌入式·PLC·AI</title>
-<meta name="description" content="蔡依翰（YihanCai）的个人网站。自动化专业，专注单片机、嵌入式开发。电子科技大学中山学院。" />
+<title>蔡依翰 · YihanCai — 嵌入式 · 电气 · PLC</title>
+<meta name="description" content="蔡依翰（YihanCai），电子科技大学中山学院自动化专业本科生。做嵌入式与电气控制：ESP32、STM32、三菱 / 西门子 PLC，从原理图、PCB 到固件与梯形图。" />
 <meta name="author" content="蔡依翰 (YihanCai)" />
-<meta name="keywords" content="YihanCai, 蔡依翰, 个人网站, 自动化, 嵌入式, 单片机, 电子科技大学中山学院" />
+<meta name="keywords" content="YihanCai, 蔡依翰, 个人网站, 自动化, 嵌入式, 电气, PLC, 单片机, 电子科技大学中山学院" />
 <meta name="theme-color" content="#04060f" />
 <link rel="canonical" href="https://YihanCai.github.io/" />
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -14,17 +14,13 @@
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="YihanCai" />
-<meta property="og:title" content="蔡依翰 · YihanCai" />
-<meta property="og:description" content="自动化·嵌入式·PLC·AI — 把想法变成能跑起来的东西。" />
+<meta property="og:title" content="蔡依翰 · YihanCai — 嵌入式 · 电气 · PLC" />
+<meta property="og:description" content="一个爱做点项目的嵌入式和电气学生 — 从原理图、PCB 到固件与梯形图。" />
 <meta property="og:url" content="https://YihanCai.github.io/" />
-<meta property="og:image" content="https://YihanCai.github.io/og.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
 <meta property="og:locale" content="zh_CN" />
-<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="蔡依翰 · YihanCai" />
-<meta name="twitter:description" content="自动化·嵌入式·PLC·AI — 把想法变成能跑起来的东西。" />
-<meta name="twitter:image" content="https://YihanCai.github.io/og.png" />
+<meta name="twitter:description" content="一个爱做点项目的嵌入式和电气学生 — 从原理图、PCB 到固件与梯形图。" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,17 +34,41 @@
 <div id="stars-near"></div>
 <div class="shoot"></div>
 
+<nav class="nav" id="nav">
+  <a class="brand" href="#top">Cai<b>yi</b><i class="num">han</i></a>
+  <div class="nav-links" id="navLinks">
+    <a href="#about">关于<span class="en">About</span></a>
+    <a href="#education">教育<span class="en">Education</span></a>
+    <a href="#experience">实习<span class="en">Experience</span></a>
+    <a href="#projects">项目<span class="en">Projects</span></a>
+    <a href="#skills">技能<span class="en">Skills</span></a>
+    <a href="#awards">荣誉<span class="en">Awards</span></a>
+    <a href="#contact">联系<span class="en">Contact</span></a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="菜单" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
 <header class="hero wrap" id="top">
   <div id="hero-cons"></div>
   <h1 class="hero-name reveal">Cai<span class="tt">yi</span><span class="num">han</span></h1>
   <div class="hero-id reveal">
-    自动化 · 嵌入式 · PLC · AI
-    <span class="en">Automation · Embedded · PLC · AI</span>
+    自动化 · 嵌入式 · 电气 · PLC
+    <span class="en">Automation · Embedded · Electrical · PLC</span>
   </div>
   <p class="hero-tag reveal">
-    一个爱玩英雄联盟的嵌入式萌新
-    <span class="en">An embedded newbie who loves League of Legends</span>
+    一个爱做点项目的嵌入式和电气学生
+    <span class="en">An embedded &amp; electrical student who loves building things</span>
   </p>
+
+  <div class="path reveal">
+    <span class="lab">现在 / Now</span>
+    <div class="school">
+      <span class="cn">电子科技大学中山学院</span>
+      <span class="en">Zhongshan Institute, UESTC · 自动化 · 2023 – 2027</span>
+    </div>
+  </div>
 
   <div class="scroll-hint">
     <div class="sd-guide">
@@ -68,14 +88,17 @@
     <div class="sec-head reveal"><span class="sec-num">01</span><h2 class="sec-title">关于我<span class="en">About</span></h2></div>
     <div class="about-grid">
       <div class="about-lede reveal">
-        <p>我是蔡依翰，一名自动化专业的创作者。</p>
-        <p>我目前专注于单片机相关的项目，从原理图设计、PCB布局到嵌入式编程，把想法变成能跑的硬件。</p>
-        <p>我不是那种时刻在找项目的人，但当一个点子突然在脑子里闪现——也许是在路上——我一定能把它做出来。</p>
+        <p>我是蔡依翰，电子科技大学中山学院自动化专业 2023 级本科生，GPA 3.63/4.00。</p>
+        <p>我的兴趣落在<em>「电」和「代码」的接缝</em>上：一边是原理图、PCB、高频变压器和接线端子，一边是 C/C++、PID、I2S 和梯形图。做过 ESP32 网络音乐播放器、STM32 二轮自平衡车、反激式开关电源，也用三菱 FX3U 和西门子 S7 在实训台上做过分拣与皮带运输控制。</p>
+        <p>做事习惯先把问题拆小：能离线仿真就先仿真，能分步验证就绝不一次上机。焊接、调试、查故障这些脏活我做得来，也愿意做——板子不亮的时候，最后总是要有人拿万用表一根根量。</p>
+        <p>我不是那种时刻在找项目的人，但一个点子突然冒出来——通常是在路上——我会把它做完，做成示波器上能看到波形、在现场能跑起来的东西。</p>
       </div>
       <div class="facts reveal">
-        <div class="fact"><div class="k">现在 / Now</div><div class="v">电子科技大学中山学院在读<small>自动化 / Automation</small></div></div>
-        <div class="fact"><div class="k">坐标 / Based in</div><div class="v">中山 · 中国<small>ZhongShan, China</small></div></div>
-        <div class="fact"><div class="k">兴趣 / Into</div><div class="v">深度学习 · PLC · 嵌入式<small>Deep Learning · PLC · Embedded</small></div></div>
+        <div class="fact"><div class="k">现在 / Now</div><div class="v">电子科技大学中山学院<small>自动化 · 2023.09 – 2027.06 · GPA 3.63/4.00</small></div></div>
+        <div class="fact"><div class="k">坐标 / Based in</div><div class="v">中山 · 中国<small>Zhongshan, Guangdong</small></div></div>
+        <div class="fact"><div class="k">方向 / Focus</div><div class="v">嵌入式开发 · 电气控制<small>Embedded · Electrical Control</small></div></div>
+        <div class="fact"><div class="k">在做 / Building</div><div class="v">ESP32 网络音乐播放器「音乐汉堡」<small>ESP32-C6 · PCM5102 · Web 控制界面</small></div></div>
+        <div class="fact"><div class="k">在找 / Open to</div><div class="v">嵌入式 / 电气 / PLC 方向实习<small>Internship · 2027 届</small></div></div>
       </div>
     </div>
   </div>
@@ -87,9 +110,26 @@
     <div class="edu">
       <div class="edu-node cur reveal">
         <span class="dot"></span>
-        <div class="when">在读 / Present</div>
+        <div class="when">2023.09 – 2027.06</div>
         <div class="school">电子科技大学中山学院<span class="en">Zhongshan Institute, UESTC</span></div>
-        <div class="deg">本科 · 自动化 — GPA 3.47/5.00 · 专业排名 29/161</div>
+        <div class="deg">本科 · 自动化　<span class="grade">GPA 3.63/4.00</span>　<span class="grade">专业排名 29/161</span></div>
+        <div class="courses">主修：模拟电路基础、电力电子技术、电气控制与 PLC、电机与拖动基础、自动控制原理、运动控制系统、工业机器人技术</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">03</span><h2 class="sec-title">实习实践<span class="en">Experience</span></h2></div>
+    <div class="exp-item reveal">
+      <div class="exp-when">2026.07.05 – 07.08</div>
+      <div>
+        <div class="exp-role">FANUC 工业机器人吸盘搬运与自动码垛调试</div>
+        <div class="exp-org">东莞高技能公共实训中心</div>
+        <div class="exp-desc">
+          完成基于 FANUC 机器人的自动化吸盘搬运与码垛项目，全过程涵盖示教器手动操作、TCP / 用户坐标系标定、运动轨迹示教与 I/O 配置；编写流程控制与偏移逻辑，实现按物料数量自动计算点位变化的动态码垛程序，提升实际产线的自动化与安全互锁能力。
+        </div>
       </div>
     </div>
   </div>
@@ -97,19 +137,128 @@
 
 <section id="projects">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="sec-num">03</span><h2 class="sec-title">项目 / 作品<span class="en">Projects</span></h2></div>
+    <div class="sec-head reveal"><span class="sec-num">04</span><h2 class="sec-title">项目 / 作品<span class="en">Projects</span></h2></div>
     <div class="proj-grid">
-      <div class="card reveal">
-        <div class="top"><span class="nm">基于RDA5807FP的调频收音机</span></div>
-        <div class="desc">基于RDA5807FP无线收发芯片制作的调频收音机，工作电压2.7~3.3V，接收频段50-108MHz。支持USB输入供电，配备电源、电调谐、音量控制按键，外接拉杆天线，支持双通道功放和耳机音频输出。</div>
-        <div class="foot"><span class="tag">Altium Designer</span><span class="tag">PCB</span><span class="tag">2024.11-2024.12</span></div>
-        <div class="resp">负责：原理图设计 &amp; PCB布局、成品调试</div>
+
+      <article class="card reveal">
+        <div class="top">
+          <span class="nm">ESP32-C6 网络音乐播放器「音乐汉堡」</span>
+          <span class="role">个人项目 · 独立开发</span>
+        </div>
+        <p class="desc">从零做的一台网络音乐播放器：ESP32-C6 主控 + PCM5102 DAC，扩展板 PCB 打样两版，浏览器端可拖动进度条控制播放。</p>
+        <ul class="pts">
+          <li>用 C/C++ 集成 ESP8266Audio，打通「SD 卡读取 → MP3 解码 → I2S 输出至 PCM5102 / 功放」的播放链路，实现播放、暂停恢复、音量调节与进度跳转。</li>
+          <li>HTTP 文件上传管理 + WebSocket 双向控制：状态变化触发推送、3 s 周期推送，实体按键、设备播放状态与浏览器界面三方同步。</li>
+          <li>集成热点配网与 WiFi 配置持久化；针对 PCM5102 冷启动无声 / 杂音问题，调整上电等待与 I2S 初始化流程，完成冷启动与复位场景验证。</li>
+        </ul>
+        <div class="foot">
+          <span class="tags"><span class="tag">ESP32-C6</span><span class="tag">C / C++</span><span class="tag">PCB</span><span class="tag">WebSocket</span></span>
+          <span class="when">2026.06 – 2026.09</span>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="top">
+          <span class="nm">基于 PLC 的工件材质自动分拣设备</span>
+          <span class="role">控制系统负责人 · 4 人小组</span>
+        </div>
+        <p class="desc">以三菱 FX3U-32MR 为核心，搭「传送带输送 + 双气缸分流 + 双路材质检测」，实现金属 / 黑色两类工件的自动识别与分拣，单件节拍约 3 s。</p>
+        <ul class="pts">
+          <li>编写 44 条指令的梯形图：启动自锁 + 复位优先管理运行状态，上升沿触发材质判别，三级定时（停带 / 推出 / 缩回各 1 s）控制动作时序，气缸互锁防止误动作。</li>
+          <li>分步验证：把程序拆成 12 / 13 / 28 / 42 / 44 条指令的五个可独立验证版本，先离线仿真（14 组工况、44 项断言全部通过）再上机，把现场排查范围缩小到单一动作。</li>
+          <li>定位并解决 7 类硬件与逻辑故障（输出公共端未按组接线、单电控电磁阀误按双电控接线、传感器误接输出端等），输出 A3 电气原理图与接线图。</li>
+        </ul>
+        <div class="foot">
+          <span class="tags"><span class="tag">FX3U-32MR</span><span class="tag">GX Works</span><span class="tag">电气原理图</span></span>
+          <span class="when">2026.09 – 2026.10</span>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="top">
+          <span class="nm">皮带运输 PLC 控制系统</span>
+          <span class="role">个人项目</span>
+        </div>
+        <p class="desc">基于 TIA Portal（博途）设计三条皮带的顺序启停：3 号 → 2 号 → 1 号依次启动、逆序停止，各级间隔 3 s；单台电机故障时本级及上游立即停机，故障指示灯闪烁报警。</p>
+        <ul class="pts">
+          <li>完成电气控制原理图、PLC 系统接线图与 I/O 分配表设计。</li>
+          <li>编写 5 段梯形图（系统启停、三级皮带启停与故障联锁、故障指示），并在 WinCC 中搭建 HMI 仿真界面完成联调。</li>
+        </ul>
+        <div class="foot">
+          <span class="tags"><span class="tag">西门子 S7</span><span class="tag">TIA Portal</span><span class="tag">WinCC</span></span>
+          <span class="when">2025.05 – 2025.06</span>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="top">
+          <span class="nm">基于 STM32 的二轮自平衡车</span>
+          <span class="role">个人项目</span>
+        </div>
+        <p class="desc">以 STM32F103C8T6 为主控，集成 MPU6050 六轴传感器、直流编码电机、OLED 与 HC-05 蓝牙模块，实现自平衡、速度闭环、姿态检测、状态显示与无线遥控。</p>
+        <ul class="pts">
+          <li>负责主控板原理图 / PCB 设计、元器件焊接与调试。</li>
+          <li>编写姿态解算、PID 控制与蓝牙通信程序。</li>
+        </ul>
+        <div class="foot">
+          <span class="tags"><span class="tag">STM32F103</span><span class="tag">MPU6050</span><span class="tag">PID</span></span>
+          <span class="when">2026.04 – 2026.06</span>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="top">
+          <span class="nm">6V 小功率开关电源</span>
+          <span class="role">个人项目</span>
+        </div>
+        <p class="desc">采用反激式拓扑实现输入输出电气隔离，核心控制器为 Power Integrations 的 DPA422PN 集成开关电源芯片。</p>
+        <ul class="pts">
+          <li>独立完成 6V 高频变压器绕制、元器件选型、原理图、PCB 设计、板子焊接与成品调试。</li>
+        </ul>
+        <div class="foot">
+          <span class="tags"><span class="tag">反激拓扑</span><span class="tag">DPA422PN</span><span class="tag">高频变压器</span></span>
+          <span class="when">2025.10 – 2025.11</span>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="top">
+          <span class="nm">基于 RDA5807FP 的调频收音机</span>
+          <span class="role">个人项目</span>
+        </div>
+        <p class="desc">基于 RDA5807FP 无线收发芯片的调频收音机，工作电压 2.7 – 3.3 V，接收频段 50 – 108 MHz。USB 供电，配备电源、电调谐、音量按键，外接拉杆天线，支持双通道功放与耳机输出。</p>
+        <ul class="pts">
+          <li>负责原理图设计与 PCB 布局、成品调试。</li>
+        </ul>
+        <div class="foot">
+          <span class="tags"><span class="tag">Altium Designer</span><span class="tag">PCB</span><span class="tag">模拟电路</span></span>
+          <span class="when">2024.11 – 2024.12</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">05</span><h2 class="sec-title">技能<span class="en">Skills</span></h2></div>
+    <div class="skill-grid">
+      <div class="skill reveal">
+        <div class="sk-name">嵌入式开发<span class="en">Embedded</span></div>
+        <div class="sk-items">ESP32 / ESP8266、STM32F103、51 单片机；C / C++、Python；Keil MDK、Arduino IDE、PlatformIO、VS Code</div>
       </div>
-      <div class="card reveal">
-        <div class="top"><span class="nm">平衡车的设计与实现</span></div>
-        <div class="desc">以STM32F103C8T6为主控芯片的两轮自平衡小车，实现自平衡自立、车速闭环控制、电机转速采集、姿态实时检测、OLED状态显示、蓝牙无线遥控五大核心功能。</div>
-        <div class="foot"><span class="tag">STM32</span><span class="tag">C</span><span class="tag">2026.4-2026.6</span></div>
-        <div class="resp">负责：主控板设计 &amp; 器件焊接、成品调试</div>
+      <div class="skill reveal">
+        <div class="sk-name">电气 · PLC<span class="en">Electrical</span></div>
+        <div class="sk-items">三菱 FX 系列、西门子 S7（TIA Portal / WinCC）；电气原理图、接线图、I/O 分配；EPLAN、GX Works</div>
+      </div>
+      <div class="skill reveal">
+        <div class="sk-name">硬件设计<span class="en">Hardware</span></div>
+        <div class="sk-items">原理图与 PCB 设计（Altium Designer 16、嘉立创 EDA）、高频变压器绕制、手工焊接与飞线、示波器 / 万用表调试</div>
+      </div>
+      <div class="skill reveal">
+        <div class="sk-name">语言 · 工具<span class="en">Languages</span></div>
+        <div class="sk-items">CET-4 577、CET-6 526；Git / GitHub、Proteus、WorkBuddy 等 AI 工具</div>
       </div>
     </div>
   </div>
@@ -117,22 +266,32 @@
 
 <section id="awards">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="sec-num">04</span><h2 class="sec-title">获奖 / 荣誉<span class="en">Awards</span></h2></div>
+    <div class="sec-head reveal"><span class="sec-num">06</span><h2 class="sec-title">荣誉 / 证书<span class="en">Awards</span></h2></div>
     <div class="awards">
       <div class="award reveal">
-        <span class="yr">2025</span>
-        <span class="ttl">国家励志奖学金<small>National Endeavor Scholarship</small></span>
+        <span class="yr">2024 – 2026</span>
+        <span class="ttl">国家励志奖学金 ×3<small>National Endeavor Scholarship · 连续三年</small></span>
         <span class="medal">国家级</span>
       </div>
       <div class="award reveal">
-        <span class="yr">2024</span>
-        <span class="ttl">国家励志奖学金<small>National Endeavor Scholarship</small></span>
-        <span class="medal">国家级</span>
+        <span class="yr">2026</span>
+        <span class="ttl">广东省大学生工程实践与创新能力大赛<small>校赛 · 二等奖</small></span>
+        <span class="medal">校级</span>
       </div>
       <div class="award reveal">
-        <span class="yr"></span>
-        <span class="ttl">"剧"焦青春心理情景剧决赛<small>心理情景剧</small></span>
+        <span class="yr">2026</span>
+        <span class="ttl">「拾光于心，'剧'焦青春」心理情景剧决赛<small>校园心理情景剧</small></span>
         <span class="medal">优秀奖</span>
+      </div>
+      <div class="award reveal">
+        <span class="yr">证书</span>
+        <span class="ttl">大学英语六级 · CET-6<small>College English Test Band 6 — 526</small></span>
+        <span class="medal">526</span>
+      </div>
+      <div class="award reveal">
+        <span class="yr">证书</span>
+        <span class="ttl">大学英语四级 · CET-4<small>College English Test Band 4 — 577</small></span>
+        <span class="medal">577</span>
       </div>
     </div>
   </div>
@@ -140,24 +299,18 @@
 
 <section id="contact">
   <div class="wrap contact">
-    <div class="big reveal">保持好奇，持续进步。</div>
-    <div class="sub reveal">Stay curious, keep improving — let's connect.</div>
+    <div class="big reveal">因为有悔，所以披星戴月<br />因为有梦，所以奋不顾身</div>
+    <div class="sub reveal">For the regrets, I walk beneath the stars. For the dreams, I hold nothing back.</div>
     <div class="links reveal">
       <a href="mailto:1772869275@qq.com"><span class="k">Email</span><span class="v">1772869275@qq.com</span></a>
+      <a href="tel:+8618102884946"><span class="k">Phone</span><span class="v">181-0288-4946</span></a>
       <a href="https://github.com/YihanCai" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">YihanCai</span></a>
       <a href="https://gitee.com/YihanCai" target="_blank" rel="noopener"><span class="k">Gitee</span><span class="v">YihanCai</span></a>
     </div>
   </div>
-  <footer>© 2025 蔡依翰 · Built after dark <span class="s">✦</span> 灵感一闪 · 代码成真</footer>
+  <footer>© 2026 蔡依翰 · Built after dark <span class="s">✦</span> 灵感一闪 · 代码成真</footer>
 </section>
 
-<script>
-  var start = 2025;
-  var now = new Date().getFullYear();
-  var years = now - start;
-  document.getElementById('coding-years') && (document.getElementById('coding-years').textContent = years);
-  document.getElementById('coding-years-en') && (document.getElementById('coding-years-en').textContent = years);
-</script>
 <script src="night-site.js"></script>
 </body>
 </html>

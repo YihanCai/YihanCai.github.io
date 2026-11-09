@@ -32,9 +32,10 @@
   const NODES = [
     { cn: '关于', en: 'About', href: '#about' },
     { cn: '教育', en: 'Education', href: '#education' },
+    { cn: '实习', en: 'Experience', href: '#experience' },
     { cn: '项目', en: 'Projects', href: '#projects' },
-    { cn: '获奖', en: 'Awards', href: '#awards' },
-    { cn: '发表', en: 'Writing', href: '#publications' },
+    { cn: '技能', en: 'Skills', href: '#skills' },
+    { cn: '荣誉', en: 'Awards', href: '#awards' },
     { cn: '联系', en: 'Contact', href: '#contact' },
   ];
   const SHAPES = [
@@ -48,6 +49,7 @@
   const POS = [
     { x: 14, y: 15 }, { x: 47, y: 12 }, { x: 88, y: 15 },
     { x: 80, y: 40 }, { x: 92, y: 64 }, { x: 74, y: 88 },
+    { x: 18, y: 76 },
   ];
   const host = document.getElementById('hero-cons');
   function flyTo(href) {
@@ -134,8 +136,9 @@
   const toggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
   if (toggle && navLinks) {
-    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-    navLinks.addEventListener('click', (e) => { if (e.target.closest('a')) navLinks.classList.remove('open'); });
+    const sync = () => toggle.setAttribute('aria-expanded', navLinks.classList.contains('open') ? 'true' : 'false');
+    toggle.addEventListener('click', () => { navLinks.classList.toggle('open'); sync(); });
+    navLinks.addEventListener('click', (e) => { if (e.target.closest('a')) { navLinks.classList.remove('open'); sync(); } });
   }
 
   /* ---------- project card cursor glow ---------- */

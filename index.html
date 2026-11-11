@@ -140,21 +140,31 @@
     <div class="sec-head reveal"><span class="sec-num">04</span><h2 class="sec-title">项目 / 作品<span class="en">Projects</span></h2></div>
     <div class="proj-grid">
 
-      <article class="card reveal">
-        <div class="top">
-          <span class="nm">ESP32-C6 网络音乐播放器「音乐汉堡」</span>
-          <span class="role">个人项目 · 独立开发</span>
+      <article class="card featured reveal">
+        <div class="body">
+          <div class="top">
+            <span class="nm">ESP32-C6 网络音乐播放器「音乐汉堡」</span>
+            <span class="role">个人项目 · 独立开发</span>
+          </div>
+          <p class="desc">从零做的一台网络音乐播放器：ESP32-C6 主控 + PCM5102 DAC，扩展板 PCB 打样两版，浏览器端可拖动进度条控制播放。</p>
+          <ul class="pts">
+            <li>用 C/C++ 集成 ESP8266Audio，打通「SD 卡读取 → MP3 解码 → I2S 输出至 PCM5102 / 功放」的播放链路，实现播放、暂停恢复、音量调节与进度跳转。</li>
+            <li>HTTP 文件上传管理 + WebSocket 双向控制：状态变化触发推送、3 s 周期推送，实体按键、设备播放状态与浏览器界面三方同步。</li>
+            <li>集成热点配网与 WiFi 配置持久化；针对 PCM5102 冷启动无声 / 杂音问题，调整上电等待与 I2S 初始化流程，完成冷启动与复位场景验证。</li>
+          </ul>
+          <div class="foot">
+            <span class="tags"><span class="tag">ESP32-C6</span><span class="tag">C / C++</span><span class="tag">PCB</span><span class="tag">WebSocket</span></span>
+            <span class="when">2026.06 – 2026.09</span>
+          </div>
         </div>
-        <p class="desc">从零做的一台网络音乐播放器：ESP32-C6 主控 + PCM5102 DAC，扩展板 PCB 打样两版，浏览器端可拖动进度条控制播放。</p>
-        <ul class="pts">
-          <li>用 C/C++ 集成 ESP8266Audio，打通「SD 卡读取 → MP3 解码 → I2S 输出至 PCM5102 / 功放」的播放链路，实现播放、暂停恢复、音量调节与进度跳转。</li>
-          <li>HTTP 文件上传管理 + WebSocket 双向控制：状态变化触发推送、3 s 周期推送，实体按键、设备播放状态与浏览器界面三方同步。</li>
-          <li>集成热点配网与 WiFi 配置持久化；针对 PCM5102 冷启动无声 / 杂音问题，调整上电等待与 I2S 初始化流程，完成冷启动与复位场景验证。</li>
-        </ul>
-        <div class="foot">
-          <span class="tags"><span class="tag">ESP32-C6</span><span class="tag">C / C++</span><span class="tag">PCB</span><span class="tag">WebSocket</span></span>
-          <span class="when">2026.06 – 2026.09</span>
-        </div>
+        <figure class="shot">
+          <picture>
+            <source srcset="music-player-v2.webp" type="image/webp" />
+            <img src="music-player-v2.jpg" width="1400" height="1006" decoding="async"
+                 alt="ESP32-C6 网络音乐播放器 V2 实物：绿色 PCB 上集成 ESP32-C6-LCD-1.3 模块、功放模块、两个喇叭与播放按键，左侧接 3000mAh 锂电池组，右侧为电源接口" />
+          </picture>
+          <figcaption>V2 · 成品实物</figcaption>
+        </figure>
       </article>
 
       <article class="card reveal">

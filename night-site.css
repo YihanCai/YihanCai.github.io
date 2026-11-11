@@ -406,11 +406,34 @@ footer .s{color:var(--violet);}
   color:var(--faint);margin-top:6px;}
 .skill .sk-items{font-family:var(--body);font-size:14.5px;line-height:1.66;color:var(--dim);margin-top:13px;}
 
+/* featured card — flagship project carrying a product photo */
+.card.featured{grid-column:1 / -1;display:grid;grid-template-columns:1.05fr 1fr;padding:0;align-items:stretch;}
+.card.featured::after{display:none;}
+.card.featured .body{display:flex;flex-direction:column;padding:34px 34px 30px;}
+.card.featured .shot{position:relative;margin:0;overflow:hidden;border-left:1px solid var(--hair);
+  background:#050814;}
+.card.featured .shot img{width:100%;height:100%;object-fit:contain;object-position:50% 50%;display:block;
+  transition:transform .9s var(--ease);}
+.card.featured:hover .shot img{transform:scale(1.04);}
+.card.featured .shot::after{content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,rgba(8,11,29,.55),rgba(8,11,29,.04) 28%),
+             linear-gradient(0deg,rgba(8,11,29,.52),transparent 40%);}
+.card.featured .shot figcaption{position:absolute;right:16px;bottom:13px;z-index:2;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(233,240,255,.62);}
+
 .award .yr{white-space:nowrap;}
 
 /* ============================================================
    responsive
    ============================================================ */
+@media (max-width:860px){
+  .card.featured{grid-template-columns:1fr;}
+  .card.featured .body{order:2;padding:26px 24px 24px;}
+  .card.featured .shot{order:1;border-left:0;border-bottom:1px solid var(--hair);aspect-ratio:14/10;}
+  .card.featured:hover .shot img{transform:none;}
+  .card.featured .shot::after{background:linear-gradient(0deg,rgba(8,11,29,.78),transparent 46%);}
+}
 @media (max-width:760px){
   .nav-links{display:none;}
   .nav-links.open{display:flex;position:absolute;top:100%;right:16px;flex-direction:column;gap:14px;
